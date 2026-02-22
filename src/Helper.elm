@@ -50,12 +50,14 @@ headers param =
         , h6 [] [ text param ]
         ]
 
+
+
 --Create a component "hyperlink" that receives two Strings
 --The url
 --The text That produces the following html:
 --<a href="{{url}}">{{text}}</a>
 
+
 hyperlink : String -> String -> Html.Html msg
 hyperlink url textLink =
-        a [ href url ] [ text textLink ]
-    
+    a [ href url ] [ text textLink ]
